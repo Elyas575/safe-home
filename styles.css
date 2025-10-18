@@ -471,3 +471,117 @@ footer {
         padding: 0 20px;
     }
 }
+
+
+/* Add these styles to your existing styles.css */
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    border-radius: 6px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+}
+
+/* Author Avatar with Logo */
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-image {
+    height: 30px;
+    width: auto;
+    border-radius: 4px;
+}
+
+/* Mobile Responsive for Logo */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .logo-image {
+        height: 32px;
+    }
+}
+
+
+/* Extension Banner Logo Styles */
+.extension-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.extension-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .extension-icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    
+    .extension-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .extension-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .extension-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
